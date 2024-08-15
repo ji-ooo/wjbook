@@ -1,0 +1,37 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: var(--sub-color);
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  border-radius: 15px;
+  overflow-y: auto;
+  height: 80vh;
+  outline: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: var(--accent-sub-color);
+  border-radius: 10px;
+}

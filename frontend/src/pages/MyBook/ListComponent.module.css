@@ -1,0 +1,40 @@
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  overflow-y: auto;
+  border-radius: 4px;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 90%;
+  border-radius: 15px;
+  background-color: var(--sub-color);
+}
+
+.listItemContent {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listItemContent > img {
+  width: 20%;
+  height: 100%;
+}
+
+.listItemContent > * > * >img {
+  width: 80px;
+}
+
+.emptyList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #888;
+}

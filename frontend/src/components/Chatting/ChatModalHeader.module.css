@@ -1,0 +1,23 @@
+.modalHeader {
+  position: absolute;
+  top: 35px;
+  background-color: inherit;
+  width: calc(100% - 32px);
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 22px;
+  z-index: 1001;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modalTitle {
+  align-self: center;
+}
+
+.modalHeader > button {
+  display: flex;
+  justify-content: start;
+  padding: 0px;
+}

@@ -1,0 +1,66 @@
+.modalBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24em;
+  max-width: 100%;
+  border-radius: 5px;
+  background: #fff;
+  color: #545454;
+  padding: 16px;
+  font-size: 18px;
+}
+
+.modalHeader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12%;
+  font-size: 18px;
+  padding: 0 20px;
+}
+
+.qualityStatus {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.emotionImages {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  padding: 20px;
+}
+
+.emotionImages img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.emotionImages img:not(.selected) {
+  opacity: 0.2;
+}
+
+.submitButton {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 55%;
+}
+
+.footer {
+  height: 20px;
+}

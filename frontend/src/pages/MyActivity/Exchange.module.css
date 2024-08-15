@@ -1,0 +1,138 @@
+.exchangeContainer {
+  padding: 10px 0;
+}
+
+.exchangeContainerInner {
+  background-color: var(--sub-color);
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, margin-bottom 0.3s ease-out;
+  max-height: 60px;
+}
+
+.exchangeContainerInner.expanded {
+  max-height: 1000px;
+  margin-bottom: 40;
+}
+
+.exchangeContainerInner > h2 {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.expandableContent {
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.expanded .expandableContent {
+  opacity: 1;
+}
+
+.emptyList {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+}
+
+.modalBook {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.senderBook, .receiverBook {
+  width: 45%;
+}
+
+.receiverBook {
+  text-align: right;
+}
+
+.receiverBook > * {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modalBook h2, .exchangeInfo h2{
+  margin: 15px 0 5px 0;
+  font-weight: bold;
+}
+
+.modalImg {
+  padding-top: 10px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modalImg img {
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.modalContent {
+  height: 40px;
+  overflow: auto;
+}
+
+.modalContent::-webkit-scrollbar {
+  display: none;
+}
+
+.modalButton {
+  width: 120px;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.exchangeBook {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.exchangeBook > div {
+  width: 45%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exchangeBook > div:last-child {
+  text-align: right;
+}
+
+.listHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.listHeader > div {
+  width: 45%;
+}
+
+.listHeader > div:last-child {
+  text-align: right;
+}

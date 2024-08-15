@@ -1,0 +1,48 @@
+.bookRegisterContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.bookRegister {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  min-height: calc(100vh - 60px);
+  background-image: url('../../assets/131313.png'); /* 배경 이미지 경로를 지정하세요 */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 45px; /* 상단 45px는 배경 이미지 없음 */
+}
+
+.titleDiv {
+  padding: 10px 20px;
+  font-size: 22px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.submitButton {
+  width: 70%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.submitButton.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.submitButton:hover {
+  background-color: #45a049;
+}

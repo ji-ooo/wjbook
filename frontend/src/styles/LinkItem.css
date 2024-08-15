@@ -1,0 +1,32 @@
+.LinkItem {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  gap: 10px;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+.LinkItem svg {
+  color: black; /* 기본 아이콘 색상 */
+}
+
+.LinkItem:hover, .LinkItem:focus {
+  background-color: var(--accent-color);
+  color: #fff;
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+
+.LinkItem:hover svg, .LinkItem:focus svg {
+  color: #fff; /* hover 시 아이콘 색상 */
+}
+
+.LinkItem a {
+  text-decoration: none;
+}

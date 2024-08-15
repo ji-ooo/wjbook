@@ -1,0 +1,98 @@
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  height: 80vh;
+  transition: height 0.5s ease;
+}
+
+.inputContainerSelected {
+  height: 15vh;
+}
+
+.searchInputWrapper {
+  position: relative;
+  width: 70%;
+}
+
+.searchInputWrapper input {
+  width: 100%;
+  height: 70px;
+  padding: 10px 30px;
+  padding-right: 40px;
+  font-size: 26px;
+  border: 2px solid var(--accent-sub-color);
+  border-radius: 30px;
+  outline: none;
+}
+
+.searchInputWrapper button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+  padding: 5px;
+}
+
+.searchInputWrapper button:hover {
+  color: #000;
+}
+
+.bookList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bookItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 20px 0;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bookItem img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.bookDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bookDetails h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.bookDetails p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.titlebox {
+  display: flex;
+  gap: 5px;
+  font-size: 20px;
+}
+
+.noResults {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 16px;
+  color: #666;
+}

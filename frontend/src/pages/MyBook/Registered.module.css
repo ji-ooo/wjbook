@@ -1,0 +1,50 @@
+.emptyList {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+}
+
+.registered {
+  width: 80%;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.registered > strong {
+  font-weight: normal;
+  color: var(--contrast-color);
+}
+
+.miniHeader {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 20px;
+  position: sticky;
+}
+
+.option {
+  width: 12em;
+  margin-right: 12px;
+}
+
+.registeredUserbooksList {
+  height: 80vh;
+  overflow: auto;
+}
+
+.registeredUserbooksList::-webkit-scrollbar {
+  width: 10px;
+}
+
+.registeredUserbooksList::-webkit-scrollbar-thumb {
+  background-color: var(--accent-sub-color);
+  border-radius: 10px;
+  height: 30px;
+  min-height: 30px;
+}
+
+.registeredUserbooksList::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
