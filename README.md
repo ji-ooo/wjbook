@@ -36,7 +36,7 @@
 
 ## 📚 프로젝트 산출물
 ### 1. 와이어프레임(Figma)
-<img src="./README_source/figma.PNG" width="700"/>
+<img src="./README_source/figma.png" width="700"/>
 
 ### 2. ERD
 <img src="./README_source/ERD.png" width="700"/>
